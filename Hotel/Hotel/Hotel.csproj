@@ -49,10 +49,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs" />
-    <Compile Include="GetNumber.cs" />
-    <Compile Include="Guest.cs" />
-    <Compile Include="RoomNumber.cs" />
+    <Compile Include="HotelAdvisor.cs" />
+    <Compile Include="Querry.cs" />
+    <Compile Include="RoomCategory.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

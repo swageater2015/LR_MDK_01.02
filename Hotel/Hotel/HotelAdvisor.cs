@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    class Data
+    class HotelAdvisor
     {
+        public string GetAdvice(enum RoomCategory, enum DayOfWeek)
     }
 }
