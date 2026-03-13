@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45FBBA91-F1D5-4259-BCFB-8F87603FE791}</ProjectGuid>
+    <ProjectGuid>{F4115F9A-A71A-4F2A-8EA5-8A2F906A17B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hotel</RootNamespace>
-    <AssemblyName>Hotel</AssemblyName>
+    <RootNamespace>HotelTests</RootNamespace>
+    <AssemblyName>HotelTests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,14 +49,19 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HotelAdvisor.cs" />
-    <Compile Include="Querry.cs" />
-    <Compile Include="RoomCategory.cs" />
+    <Compile Include="DayOfWeekServiceTests.cs" />
+    <Compile Include="HotelAdvisorTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel\HotelLib.csproj">
+      <Project>{45fbba91-f1d5-4259-bcfb-8f87603fe791}</Project>
+      <Name>HotelLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
